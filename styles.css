@@ -17,6 +17,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 button:hover {
@@ -55,7 +56,41 @@ button:hover {
     background-color: #003d80; /* Even darker blue on hover */
 }
 
-#quiz-screen, #results-screen, #game-screen, #rewards-screen {
+#game-screen {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scenario p {
+    font-size: 18px;
+    color: #333;
+}
+
+.scenario button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#see-results {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#see-results:hover {
+    background-color: #218838;
+}
+
+#results-screen, #rewards-screen {
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
