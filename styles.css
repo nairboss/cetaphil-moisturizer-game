@@ -1,3 +1,38 @@
+#welcome-screen {
+    background-image: url('https://github.com/your-username/your-repository-name/blob/main/image.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#welcome-screen h1 {
+    margin-bottom: 20px;
+}
+
+#welcome-screen button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#welcome-screen button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
