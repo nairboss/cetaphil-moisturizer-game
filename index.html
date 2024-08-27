@@ -12,54 +12,35 @@
         <button onclick="startQuiz()">Start Game</button>
     </div>
 
-    <div id="quiz-screen" style="display:none;">
-        <h2>Skin Type Analysis</h2>
-        <form id="quiz-form">
-            <label>How does your skin feel after cleansing?</label><br>
-            <input type="radio" name="q1" value="dry"> Tight and dry<br>
-            <input type="radio" name="q1" value="balanced"> Balanced<br>
-            <input type="radio" name="q1" value="oily"> Oily in certain areas<br>
-            <input type="radio" name="q1" value="very_oily"> Very oily<br><br>
+    <div id="game-screen" style="display:none;">
+        <h2>Discover Your Skin Type Adventure</h2>
+        
+        <div id="scenario-1" class="scenario">
+            <p>You wake up with your skin feeling dry. What do you do?</p>
+            <button onclick="chooseOption('moisturize')">Moisturize immediately</button>
+            <button onclick="chooseOption('ignore')">Ignore it and proceed with your day</button>
+        </div>
+        
+        <div id="scenario-2" class="scenario" style="display:none;">
+            <p>It’s a sunny day. How do you protect your skin?</p>
+            <button onclick="chooseOption('sunscreen')">Apply sunscreen generously</button>
+            <button onclick="chooseOption('nothing')">Do nothing</button>
+        </div>
 
-            <label>How often do you experience redness or irritation?</label><br>
-            <input type="radio" name="q2" value="often"> Often<br>
-            <input type="radio" name="q2" value="occasionally"> Occasionally<br>
-            <input type="radio" name="q2" value="rarely"> Rarely<br>
-            <input type="radio" name="q2" value="never"> Never<br><br>
+        <div id="scenario-3" class="scenario" style="display:none;">
+            <p>You notice some redness on your face. What’s your next move?</p>
+            <button onclick="chooseOption('soothe')">Apply a soothing cream</button>
+            <button onclick="chooseOption('ignore_redness')">Ignore it</button>
+        </div>
 
-            <label>What is your primary skincare concern?</label><br>
-            <input type="radio" name="q3" value="dryness"> Dryness<br>
-            <input type="radio" name="q3" value="oiliness"> Oiliness<br>
-            <input type="radio" name="q3" value="sensitivity"> Sensitivity<br>
-            <input type="radio" name="q3" value="texture"> Uneven Texture<br><br>
-
-            <label>Which statement best describes your current moisturizer usage?</label><br>
-            <input type="radio" name="q4" value="regularly"> I use a moisturizer regularly<br>
-            <input type="radio" name="q4" value="occasionally"> I use it occasionally<br>
-            <input type="radio" name="q4" value="rarely"> I rarely use moisturizer<br>
-            <input type="radio" name="q4" value="never"> I don’t use moisturizer<br><br>
-
-            <label>How would you describe your skin’s reaction to new skincare products?</label><br>
-            <input type="radio" name="q5" value="sensitive"> Sensitive<br>
-            <input type="radio" name="q5" value="tolerant"> Tolerant<br>
-            <input type="radio" name="q5" value="occasionally_reactive"> Occasionally reactive<br>
-            <input type="radio" name="q5" value="never_reactive"> Never reactive<br><br>
-
-            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
-        </form>
+        <button id="see-results" style="display:none;" onclick="showResults()">See My Skin Type</button>
     </div>
 
     <div id="results-screen" style="display:none;">
         <h2>Your Skin Type</h2>
         <p id="skin-type-result"></p>
         <p id="recommendation"></p>
-        <button onclick="startGame()">Play the Game</button>
-    </div>
-
-    <div id="game-screen" style="display:none;">
-        <h2>Match the Skin Concern to the Moisturizer</h2>
-        <!-- Add matching game elements here -->
-        <button onclick="showRewards()">Submit</button>
+        <button onclick="claimTrialPack()">Claim My Trial Pack</button>
     </div>
 
     <div id="rewards-screen" style="display:none;">
