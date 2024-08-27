@@ -7,12 +7,12 @@ body {
 }
 
 h1, h2 {
-    color: #2d6e9d;
+    color: #ffffff;  /* Change to white for better visibility */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #2d6e9d;
+    background-color: #0056b3; /* Darker blue button for contrast */
     color: white;
     border: none;
     border-radius: 5px;
@@ -20,11 +20,11 @@ button {
 }
 
 button:hover {
-    background-color: #3d7ead;
+    background-color: #003d80; /* Even darker on hover for better visibility */
 }
 
 #welcome-screen {
-    background-image: url('cetaphil_gentle_skin_cleanser_moisturising_lotion_125ml_100ml_7.jpg');
+    background-image: url('https://github.com/your-username/your-repository-name/blob/main/cetaphil_gentle_skin_cleanser_moisturising_lotion_125ml_100ml_7.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ button:hover {
 }
 
 #welcome-screen button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0056b3; /* Darker blue */
     border: 1px solid white;
     padding: 10px 20px;
     color: white;
@@ -54,7 +54,7 @@ button:hover {
 }
 
 #welcome-screen button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #003d80; /* Even darker blue on hover */
 }
 
 #quiz-screen, #results-screen, #game-screen, #rewards-screen {
