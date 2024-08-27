@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    color: #2d6e9d;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2d6e9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d7ead;
+}
+
+#quiz-screen, #results-screen, #game-screen, #rewards-screen {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
