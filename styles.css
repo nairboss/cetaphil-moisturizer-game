@@ -1,5 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2d6e9d;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2d6e9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d7ead;
+}
+
 #welcome-screen {
-    background-image: url('cetaphil_gentle_skin_cleanser_moisturising_lotion_125ml_100ml_7.jpg');
+    background-image: url('cetaphil_gentle_skin_cleanser_moisturising_lotion_125ml_100ml_7.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,30 +55,6 @@
 
 #welcome-screen button:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f7f7f7;
-}
-
-h1, h2 {
-    color: #2d6e9d;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #2d6e9d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3d7ead;
 }
 
 #quiz-screen, #results-screen, #game-screen, #rewards-screen {
