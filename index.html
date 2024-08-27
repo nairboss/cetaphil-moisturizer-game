@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetaphil Moisturizer Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Welcome to the Cetaphil Skin Type Quiz!</h1>
+        <button onclick="startQuiz()">Start Game</button>
+    </div>
+
+    <div id="quiz-screen" style="display:none;">
+        <h2>Skin Type Analysis</h2>
+        <form id="quiz-form">
+            <label>How does your skin feel after cleansing?</label><br>
+            <input type="radio" name="q1" value="dry"> Tight and dry<br>
+            <input type="radio" name="q1" value="balanced"> Balanced<br>
+            <input type="radio" name="q1" value="oily"> Oily in certain areas<br>
+            <input type="radio" name="q1" value="very_oily"> Very oily<br><br>
+
+            <label>How often do you experience redness or irritation?</label><br>
+            <input type="radio" name="q2" value="often"> Often<br>
+            <input type="radio" name="q2" value="occasionally"> Occasionally<br>
+            <input type="radio" name="q2" value="rarely"> Rarely<br>
+            <input type="radio" name="q2" value="never"> Never<br><br>
+
+            <label>What is your primary skincare concern?</label><br>
+            <input type="radio" name="q3" value="dryness"> Dryness<br>
+            <input type="radio" name="q3" value="oiliness"> Oiliness<br>
+            <input type="radio" name="q3" value="sensitivity"> Sensitivity<br>
+            <input type="radio" name="q3" value="texture"> Uneven Texture<br><br>
+
+            <label>Which statement best describes your current moisturizer usage?</label><br>
+            <input type="radio" name="q4" value="regularly"> I use a moisturizer regularly<br>
+            <input type="radio" name="q4" value="occasionally"> I use it occasionally<br>
+            <input type="radio" name="q4" value="rarely"> I rarely use moisturizer<br>
+            <input type="radio" name="q4" value="never"> I don’t use moisturizer<br><br>
+
+            <label>How would you describe your skin’s reaction to new skincare products?</label><br>
+            <input type="radio" name="q5" value="sensitive"> Sensitive<br>
+            <input type="radio" name="q5" value="tolerant"> Tolerant<br>
+            <input type="radio" name="q5" value="occasionally_reactive"> Occasionally reactive<br>
+            <input type="radio" name="q5" value="never_reactive"> Never reactive<br><br>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+
+    <div id="results-screen" style="display:none;">
+        <h2>Your Skin Type</h2>
+        <p id="skin-type-result"></p>
+        <p id="recommendation"></p>
+        <button onclick="startGame()">Play the Game</button>
+    </div>
+
+    <div id="game-screen" style="display:none;">
+        <h2>Match the Skin Concern to the Moisturizer</h2>
+        <!-- Add matching game elements here -->
+        <button onclick="showRewards()">Submit</button>
+    </div>
+
+    <div id="rewards-screen" style="display:none;">
+        <h2>Congratulations!</h2>
+        <p id="reward-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
